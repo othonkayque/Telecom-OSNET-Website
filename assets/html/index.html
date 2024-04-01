@@ -35,16 +35,16 @@
                 </div>
                 <form action="/upload" enctype="multipart/form-data" method="post">
                     <div class="input input-name">
-                        <label for="name">Nome completo</label>
-                        <input type="text" name="name" id="complete-name" v-model="nome">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" name="nome" id="complete-name">
                     </div>
                     <div class="input input-name">
                         <label for="age">Idade</label>
                         <input type="number" name="age" id="age" >
                     </div>
                     <div class="input input-profissao">
-                        <label for="Profissao">Profissão</label>
-                        <input type="text" name="Profissao" id="profissao" >
+                        <label for="prof">Profissão</label>
+                        <input type="text" name="prof" id="profissao" >
                     </div>
                     <div class="input input-mail">
                         <label for="mail">Email(opcional)</label>
@@ -59,8 +59,8 @@
                         <input type="file" name="cpf-file" id="file-cpf" class="file-input file-cpf" multiple style="display: none;">
                     </div>
                     <div class="input input-RG">
-                        <label for="RG">RG</label>
-                        <input type="text" name="RG" id="RG">
+                        <label for="rg">RG</label>
+                        <input type="text" name="rg" id="RG">
                     </div>
                     <div class="input input-img-rg">
                         <label for="file-RG"> <i class="ri-upload-2-line"></i> Imagem do seu RG</label>
@@ -71,8 +71,8 @@
                         <input type="text" name="emissor" id="EmissorRG" >
                     </div>
                     <div class="input input-OE">
-                        <label for="dataEmissão">Data de emissão</label>
-                        <input type="text" name="dataEmissão" id="dataEmissorRG" >
+                        <label for="dataEmissao">Data de emissão</label>
+                        <input type="text" name="dataEmissao" id="dataEmissorRG" >
                     </div>
                     <div class="input input-local">
                         <label for="local">Localidade</label>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="input input-pagamento">
                         <label for="diaPagamento">Dia de pagamento</label>
-                        <select name="diaPagamento" class="form-select" aria-label="Multiple select example">
+                        <select name="diaPagamento" name="diaPagamento" class="form-select" aria-label="Multiple select example">
                             <option value="5">Dia 5</option>
                             <option value="10">Dia 10</option>
                             <option value="15">Dia 15</option>
@@ -101,15 +101,15 @@
                         </select>
                     </div>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <input class="form-check-input" name="moraSitio" type="checkbox" id="flexSwitchCheckDefault">
                         <label class="form-check-label" for="flexSwitchCheckDefault">Você mora no sitio?</label>
                     </div>
 
                     <div id="planos">
                         <div class="cidade">
                             <div class="input input-ref">
-                                <label for="diaPagamento">Planos cidade</label>
-                                <select name="diaPagamento" class="form-select" id="planoCidade" aria-label="Multiple select example">
+                                <label for="planoCidade">Planos cidade</label>
+                                <select name="planoCidade" name="planoCidade" class="form-select" id="planoCidade" aria-label="Multiple select example">
                                     <option value="100">100 Megas - R$ 69,00</option>
                                     <option value="200">200 Megas - R$ 79,00</option>
                                     <option value="300">300 Megas - R$ 105,00</option>
@@ -117,32 +117,22 @@
                             </div>
                         </div>
                         <div class="sitio">
-                            <label for="diaPagamento">Planos Sitio</label>
-                            <select name="diaPagamento" class="form-select" id="planoSitio" aria-label="Multiple select example">
+                            <label for="planoSitio">Planos Sitio</label>
+                            <select name="planoSitio" name="planoSitio" class="form-select" id="planoSitio" aria-label="Multiple select example">
                                 <option value="7">7 Megas - R$ 79,00</option>
                                 <option value="10">10 Megas - R$ 95,00</option>
                             </select>
                         </div>
                     </div>
-                    <button name="btn-register" type="submit" class="btn btn-dark" id="registrar" onclick="popUp()">Registrar</button>
+                    <button type="submit" name="btn-register" class="btn btn-dark" id="registrar">Registrar</button>
                 </form>
                 <div>
                 </div>
             </header>
         </div>
-        <div class="a1">
-            <div id="popup">
-                <h3>Verificação</h3>
-                <p>Após o envio dessas informações, envie fotos frente e verso do seu CPF e RG</p>
-                <span>
-                    <button class="btn btn-danger" onclick="sendCancel()">Cancelar</button>
-                    <button class="btn btn-success" onclick="send()">Enviar</button>
-                </span>
-            </div>
-        </div>
     </section>
 
 </body>
 <script src="javascript/script.js"></script>
-<script src="javascript/sendInfo.js"></script>
+<script src="javascript/getInfos.js"></script>
 </html>

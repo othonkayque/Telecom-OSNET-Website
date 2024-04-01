@@ -22,5 +22,5 @@ Esté website foi criado para agilizar o processo de coleta de dados para cadast
 
 ### Imagens do projeto:
 
-![Rota padrão /.](/assets/img/rotaRegistro.webp "Rota de registro")
-![Rota /osnet.](/assets/img/rotaOsnet.webp "Rota de planos da empresa.")
+![Rota padrão /.](/assets/imagens_interface/interface_registro.webp "Rota de registro")
+![Rota /osnet.](/assets/imagens_interface/interface_sobre.webp "Rota de planos da empresa.")
